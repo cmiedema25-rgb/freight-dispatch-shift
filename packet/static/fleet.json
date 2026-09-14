@@ -1,0 +1,32 @@
+{
+  "desk": "Northline Inland construction materials",
+  "shift_date": "2026-09-14",
+  "timezone": "America/Los_Angeles",
+  "vehicles": [
+    {"vehicle_id": "V01", "body": "dump", "gvw_lb": 66000, "hazmat": false, "crane": false},
+    {"vehicle_id": "V02", "body": "flatbed", "gvw_lb": 80000, "hazmat": false, "crane": true},
+    {"vehicle_id": "V03", "body": "tanker", "gvw_lb": 80000, "hazmat": true, "crane": false},
+    {"vehicle_id": "V04", "body": "van", "gvw_lb": 14000, "hazmat": false, "crane": false}
+  ],
+  "drivers": [
+    {"driver_id": "D01", "name": "Reyes", "hazmat": false, "tanker": false, "hours_available": 11.0},
+    {"driver_id": "D02", "name": "Nguyen", "hazmat": false, "tanker": false, "hours_available": 11.0},
+    {"driver_id": "D03", "name": "Hale", "hazmat": true, "tanker": true, "hours_available": 10.0},
+    {"driver_id": "D04", "name": "Ortiz", "hazmat": false, "tanker": false, "hours_available": 8.0}
+  ],
+  "pairings": [
+    ["V01", "D01"],
+    ["V02", "D02"],
+    ["V03", "D03"],
+    ["V04", "D04"]
+  ],
+  "suppliers": [
+    {"supplier_id": "Y-PERRIS", "name": "Perris Aggregate Yard", "load_min": 18, "cutoff": "15:30"},
+    {"supplier_id": "Y-FONTANA", "name": "Fontana Steel Dock", "load_min": 25, "cutoff": "16:00"},
+    {"supplier_id": "Y-COLTON", "name": "Colton Asphalt / Tank", "load_min": 30, "cutoff": "14:45"},
+    {"supplier_id": "Y-ONTARIO", "name": "Ontario City Warehouse", "load_min": 15, "cutoff": "17:00"}
+  ],
+  "fuel_usd_per_gallon": 4.62,
+  "mpg": {"dump": 5.4, "flatbed": 6.1, "tanker": 5.8, "van": 12.0},
+  "toll_usd": 18.0
+}
